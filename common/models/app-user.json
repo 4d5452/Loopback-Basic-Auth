@@ -1,0 +1,34 @@
+{
+  "name": "AppUser",
+  "base": "PersistedModel",
+  "description": [
+    "Application Users"
+  ],
+  "properties": {
+    "id": {
+      "type": "Number",
+      "generated": true,
+      "id": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "options": {},
+  "hidden": [
+    "password"
+  ],
+  "acls": [],
+  "relations": {},
+  "mixins": {
+    "Timestamp": {}
+  },
+  "http": { 
+    "path": "/users"
+  }
+}

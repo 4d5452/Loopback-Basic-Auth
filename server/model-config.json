@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AppUser": {
+    "dataSource": "AppUsers",
+    "public": true,
+    "options": {
+      "remoting": {
+        "sharedMethods": {
+          "*": false,
+          "create": true,
+          "replaceById": true,
+          "findById": true,
+          "find": true,
+          "deleteById": true,
+          "login": true,
+          "foo": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "AppUsers": {
+    "name": "AppUsers",
+    "connector": "memory",
+    "file": "./data/app-users.json"
+  }
+}
